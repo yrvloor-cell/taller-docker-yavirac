@@ -1,7 +1,7 @@
 {
-  "name": "microservicio-jandry",
+  "name": "microservicio-Ruby",
   "version": "1.0.0",
-  "description": "API conectada a PostgreSQL - Jandry Rosado",
+  "description": "API conectada a PostgreSQL - Ruby Loor",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

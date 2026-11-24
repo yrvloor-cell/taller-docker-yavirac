@@ -9,10 +9,10 @@ app.use(express.json());
 
 // Conexión a PostgreSQL
 const pool = new Pool({
-  host: process.env.DB_HOST || 'jandry-postgres',
-  user: process.env.DB_USER || 'jandry_user',
-  password: process.env.DB_PASSWORD || 'jandry123',
-  database: process.env.DB_NAME || 'jandry_db',
+  host: process.env.DB_HOST || 'Ruby-postgres',
+  user: process.env.DB_USER || 'Ruby_user',
+  password: process.env.DB_PASSWORD || 'Ruby123',
+  database: process.env.DB_NAME || 'Ruby_db',
   port: 5432,
 });
 
@@ -46,7 +46,7 @@ app.get('/', async (req, res) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Panel PostgreSQL - Jandry Rosado</title>
+      <title>Panel PostgreSQL - Ruby Loor</title>
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body {
@@ -177,12 +177,12 @@ app.get('/', async (req, res) => {
       <div class="card">
         <span class="badge">Yo estudio en Yavirac</span>
         <h1>Despliegue con PostgreSQL</h1>
-        <p class="subtitle">Estudiante: <strong>Jandry Rosado</strong></p>
+        <p class="subtitle">Estudiante: <strong>Ruby Loor</strong></p>
 
         <form action="/guardar" method="POST">
           <div class="form-group">
             <label for="nombre">¿Cuál es tu nombre?</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej. Jandry Rosado" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ruby Loor" required>
           </div>
 
           <div class="form-group">
